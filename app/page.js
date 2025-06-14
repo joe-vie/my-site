@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <h1>Jovie's Official Site</h1>
@@ -21,7 +19,30 @@ export default function Home() {
         more.
       </p>
       <h2>What are some aspects of me I would like for you to know?</h2>
-      <p></p>
+      <h3>My Love for Acting!</h3>
+      <p>
+        My love for acting started ever since freshman year. Doing production
+        after production, I have enjoyed getting to work with my classmates and
+        work as an ensemble. Here are some photos from our most recent play
+      </p>
+      <Image
+        src="/acting/dotm1.jpg"
+        alt="perspective photo of Dark of the Moon"
+        width={600}
+        height={400}
+      ></Image>
+      <Image
+        src="/acting/dotm2.jpg"
+        alt="perspective photo of Dark of the Moon"
+        width={600}
+        height={400}
+      ></Image>
+      <Image
+        src="/acting/dotm3.jpg"
+        alt="perspective photo of Dark of the Moon"
+        width={600}
+        height={400}
+      ></Image>
     </div>
   );
 }
