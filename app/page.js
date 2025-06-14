@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+("use client");
 
 export default function Home() {
   const [count, setCount] = useState(0);
