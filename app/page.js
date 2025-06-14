@@ -1,95 +1,27 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [count, setCount] = useState(0);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  return (
+    <div>
+      <h1>Jovie's Official Site</h1>
+      <p>
+        Welcome to my personal site (currently in the works but I'm certainly
+        aspiring to revise this as well as i can)
+      </p>
+
+      <h2>Why did you wish to join this workshop?</h2>
+      <p>
+        I chose to join this workshop because it would be a step in the right
+        direction to allow for me to learn more about advanced web development.
+        While I have given workshops about the basics of HTML and CSS, I have
+        never really spent enough time to improve my proficiency in web dev and
+        web design which has further given me motivation to want to pursue even
+        more.
+      </p>
+      <h2>What are some aspects of me I would like for you to know?</h2>
+      <p></p>
     </div>
   );
 }
