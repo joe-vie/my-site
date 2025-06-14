@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const [count, setCount] = useState(0);
   return (
     <div>
       <h1>Jovie's Official Site</h1>
